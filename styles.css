@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+#header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    z-index: 1;
+    background-color:#EEEEEE;
+}
+
+#header-img {
+    height: 50%;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    margin-right: 40px;
+    font-size: 1.3em;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px
+}
+
+main {
+    padding-top: 75px;
+    height: 100vh;
+    z-index: 2;
+}
+
+#subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#subscription h2 {
+    margin: 30px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form #email {
+    width: 230px;
+    height: 25px;
+}
+
+form #submit {
+    background-color: #F1C40F;
+    border-style: none;
+    width: 120px;
+    height: 30px;
+    margin: 30px;
+}
+
+#features {
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+}
+
+li {
+    /* margin-left: 15%; */
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+li i {
+    width: 20%;
+    color: #F1C40F;
+}
+
+li div {
+    width: 80%;
+
+}
+
+li div h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px
+}
+
+#how-it-works {
+    text-align: center;
+    margin: 30px
+}
+
+#pricing {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 50px
+}
+
+#pricing .card {
+    border: 1px solid black;
+    width: 30%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
+
+.card h3 {
+    background-color: #DDDDDD;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.price {
+    font-size: 1.6em;
+    font-weight: 600;
+
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2em
+}
+
+button {
+    background-color: #F1C40F;
+    border-style: none;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 30px
+}
+
+@media(max-width: 850px){
+    
+    #header-img{
+        
+        height: 40%;
+    }
+    #nav-bar{
+        font-size: 1.1em;
+    }
+    #pricing{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0
+    }
+    #pricing .card{
+        width: 50%;
+        margin-bottom: 50px
+    }
+    .price{
+        margin: 20px
+    }
+    button{
+        margin: 20px
+    }
+
+}
